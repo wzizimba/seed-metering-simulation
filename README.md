@@ -1,5 +1,4 @@
 # Calibrated Stochastic Model for a Seed Metering Simulation
-
 ---
 
 ## Project Overview
@@ -24,6 +23,17 @@ $$S_{a} = \frac{1}{\text{Seeds/m} \cdot (1 - \lambda)}$$
  Where $$\lambda$$ represents the ground-wheel slip coefficient.
 
 ### 2. Ground Wheel Slip
-The variable is embedde in the mechanical tranmission model above
+The variable is embedded in the mechanical tranmission model above
 
 ### 3. Stochastic Monte Carlo Model
+To capture real-world disturbances, the model runs 10,000 trials.
+**Event Probabilities:** 
+a) Single seed: 0.94; 
+b) Empty cell: 0.04; 
+c) Double pickup: 0.02;
+
+---
+
+## Experimental Validation
+The simulation was calibrated using experimental data collected at a constant foward speed of **4.0 km/h**. Results are recorded in 'data/experimental_data.csv'
+
