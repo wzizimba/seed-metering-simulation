@@ -2,7 +2,7 @@
 
 **Author:** Wezi Zimba
 
-**Field:** Engineering | Compuatational Science | Stochastic Modeling
+**Fields:** Computational Science and Engineering
 
 ---
 
