@@ -19,7 +19,7 @@ The simulation treats the metering mechanism as a mechanically linked system. Pl
 
 **Transmission Equation:** 
 
-$$S_{a} = \frac{1}{\text{SeedsPerMeter} \cdot (1 - \lambda)}$$
+$$S_{a} = \frac{1}{\text{Seeds/m} \cdot (1 - \lambda)}$$
 
  Where $$\lambda$$ represents the ground-wheel slip coefficient.
 
