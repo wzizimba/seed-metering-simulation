@@ -17,7 +17,7 @@ The simulation treats the metering mechanism as a mechanically linked system. Pl
 **Reference:** Intergrated **Baldan PLB Gear Table**
 **Transmission Equation:** $$S_{actual} = \frac{1}{\text{SeedsPerMeter} \cdot (1 - \lambda)}$$
 
-  *Where $\lambda$ represents the ground-wheel slip coefficient.*
+  *Where $$\lambda$$ represents the ground-wheel slip coefficient.*
 
 ### 2. Ground Wheel Slip
 The variable is embedde in the mechanical tranmission model above
