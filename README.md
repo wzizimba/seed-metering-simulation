@@ -1,4 +1,4 @@
-# A Calibrated Stochastic Model for a Seed Metering Simulation
+# Calibrated Stochastic Model for a Seed Metering Simulation
 
 ---
 
