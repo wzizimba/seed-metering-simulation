@@ -16,6 +16,7 @@ The project resolves the discrepancy between theoretical spacing of $20.0$ cm an
 The simulation treats the metering mechanism as a mechanically linked system. Plate rotation is derived from ground wheel travel confined to a specified gear ratio.
 **Reference:** Intergrated **Baldan PLB Gear Table**
 **Transmission Equation:** $$S_{actual} = \frac{1}{\text{SeedsPerMeter} \cdot (1 - \lambda)}$$
+
   *Where $\lambda$ represents the ground-wheel slip coefficient.*
 
 ### 2. Ground Wheel Slip
