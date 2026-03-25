@@ -1,9 +1,5 @@
 # A Calibrated Stochastic Model for a Seed Metering Simulation
 
-**Author:** Wezi Zimba
-
-**Fields:** Computational Science and Engineering
-
 ---
 
 ## Project Overview
