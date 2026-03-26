@@ -18,7 +18,7 @@ gear_combinations = {
 
 # Calibartion
 motor_A = 8
-motor_B = 11
+moved_B = 11
 dia_wheel = 0.64
 wheel_slip = 0.085
 N_cells = 26
