@@ -1,7 +1,5 @@
 # Calibrated Stochastic Model for a Seed Metering Simulation
 
-Computational extension of Bachelor thesis work
-
 ## Project Overview
 This repository contains a Python simulation of a **26-cell seed metering plate** design for a metering mechanism calibrated with gear configurations (ratios) from the Baldan PLB row planter manual. The simulation identifies a ground slip of **$\lambda$ = 8.5%** as a significant physical cause.
 
@@ -9,6 +7,8 @@ The project resolves the discrepancy between theoretical spacing of $20.0$ cm an
 1. **Mechanical Tansmission:** Sprocket-to-plate ratios.
 2. **Ground Wheel Slip ($\lambda$):** Modeling the interaction between soil and ground wheel.
 3. **Stochastic Monte Carlo Model:** Accounts for the probablistc misses and double pickup events.
+
+This project is a computational extension of my Bachelor thesis work
 
 ---
 
