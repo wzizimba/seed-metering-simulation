@@ -2,8 +2,6 @@
 
 Computational extension of Bachelor thesis work
 
----
-
 ## Project Overview
 This repository contains a Python simulation of a **26-cell seed metering plate** design for a metering mechanism calibrated with gear configurations (ratios) from the Baldan PLB row planter manual. The simulation identifies a ground slip of **$\lambda$ = 8.5%** as a significant physical cause.
 
