@@ -6,8 +6,8 @@
 N = 10000
 Seed_ran = 42
 noise_frac = 0.015
-P_miss = 0.05
-P_double = 0.02
+p_miss = 0.05
+p_double = 0.02
 
 # Baldan PLB gear table 9from manual)
 gear_combinations = {
