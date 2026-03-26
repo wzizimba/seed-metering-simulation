@@ -47,7 +47,8 @@ a) Empty cell (p0): 0.04;
 b) Single seed (p1): 0.94; 
 c) Double pickup (p2): 0.02;
 
-The contarint: p0 + p1 + p2 = 1 is enforced
+The constraint: p0 + p1 + p2 = 1 is enforced
+
 ---
 
 ## Experimental Validation
