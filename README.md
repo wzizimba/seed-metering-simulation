@@ -1,4 +1,7 @@
 # Calibrated Stochastic Model for a Seed Metering Simulation
+
+Computational extension of Bachelor thesis work
+
 ---
 
 ## Project Overview
