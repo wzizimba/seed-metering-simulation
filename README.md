@@ -43,8 +43,11 @@ $$S_a = \frac{s_t}{1 - \lambda}$$
 To capture real-world disturbances, the model runs 10,000 trials and variablity through probabilistic pickup events is added. Each cell pass is modeled as a random draw from three outcomes:
 
 **Event Probabilities:** 
+
 a) Empty cell (p0): 0.04; 
+
 b) Single seed (p1): 0.94; 
+
 c) Double pickup (p2): 0.02;
 
 The constraint: p0 + p1 + p2 = 1 is enforced
