@@ -18,17 +18,17 @@ The simulation treats the metering mechanism as a mechanically linked system. Fr
 
 The number of seeds delivered in a meter is:
 
-$$seeds\ per\ metre = \frac{N \cdot r}{C_w}$$
+$$\text{Seeds per metre} = \frac{N \cdot r}{C_w}$$
 
-Where $$r\$$ is the transmission ratio
+Where $$r$$ is the transmission ratio
 
 Theoretical intra-row spacing is therefore:
 
-$$s_{t} = \frac{C_w}N \cdot r}$$
+$$s_t = \frac{C_w}{N \cdot r}$$
 
 **Transmission Equation:** 
 
-$$S_{a} = \frac{1}{\text{Seeds/m} \cdot (1 - \lambda)}$$
+$$S_{a} = \frac{1}{S_m \cdot (1 - \lambda)}$$
 
  Where $$\lambda$$ represents the ground-wheel slip coefficient.
 
@@ -36,7 +36,8 @@ $$S_{a} = \frac{1}{\text{Seeds/m} \cdot (1 - \lambda)}$$
 This occurs when the wheel rotates through an angle that reduces actual ground contaact and delivers less forward motion.
 
 Actual spacing under slip is: 
-$$S_{a} = \frac{s_{t}{(1 - \lambda)}$$
+
+$$S_a = \frac{s_t}{1 - \lambda}$$
 
 ### 3. Stochastic Monte Carlo Model
 To capture real-world disturbances, the model runs 10,000 trials and variablity through probabilistic pickup events is added. Each cell pass is modeled as a random draw from three outcomes:
