@@ -1,12 +1,14 @@
 # Calibrated Stochastic Model for a Seed Metering Simulation
 
 ## Project Overview
-This repository contains a Python simulation of a **26-cell seed metering plate** design for a metering mechanism calibrated with gear configurations (ratios) from the Baldan PLB row planter manual. The simulation identifies a ground slip of **$\lambda$ = 8.5%** as a significant physical cause.
+This repository contains a Python simulation of a **26-cell seed metering plate** design for a metering mechanism calibrated with gear configurations (ratios) from the Baldan PLB row planter manual. 
 
 The project resolves the discrepancy between theoretical spacing of $20.0$ cm and the mean experimental field results of $21.7$ cm [1] by incoporating:
 1. **Mechanical Tansmission:** Sprocket-to-plate ratios.
 2. **Ground Wheel Slip ($\lambda$):** Modeling the interaction between soil and ground wheel.
 3. **Stochastic Monte Carlo Model:** Accounts for the probablistc misses and double pickup events.
+
+A ground slip of **$\lambda$ = 8.5%** is identified as a significant physical cause.
 
 This project is a computational extension of my Bachelor thesis work
 
@@ -19,7 +21,7 @@ The simulation treats the metering mechanism as a mechanically linked system. Fr
 
 The number of seeds delivered in a meter is:
 
-$$\text{Seeds per metre} = \frac{N \cdot r}{C_w}$$
+$$s_m = \frac{N \cdot r}{C_w}$$
 
 Where $$r$$ is the transmission ratio
 
@@ -52,6 +54,18 @@ b) Single seed (p1): 0.94;
 c) Double pickup (p2): 0.02;
 
 The constraint: p0 + p1 + p2 = 1 is enforced
+
+The total number of seeds for a give cell pass can be represented as: 
+
+$$S_{total} = \sum_{i=1}^{N} X_i$$
+
+Where $$X$$ is a discrete random variable with the probability mass function:
+
+$P(X=0) = 0.04$
+
+$P(X=1) = 0.94$
+
+$P(X=2) = 0.02$
 
 ---
 
