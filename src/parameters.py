@@ -1,28 +1,24 @@
-# import os 
-# read = os.path.dirname(os.path.abspath(__file__))
-# data_path = os.path.join(read, '..', 'data', 'experimental_results.csv')
+# ===================================== 
+# Project: Calibrated Stochastic Model 
+# Author: Wezi Zimba (c) 2026
+# =====================================
 
-# Constants 
-N = 10000
-Seed_ran = 42
-noise_frac = 0.015
-p_miss = 0.05
-p_double = 0.02
+N = 10000 # Simulation trials
+Lambda = 0.085 # Ground slip coeffecient
+exp_spcng = 20.0 # expected spacin in [cm]
+expr_mean = 21.7 # experimental mean in [cm]
 
-# Baldan PLB gear table 9from manual)
-gear_combinations = {
-    (8, 15): 3.5, (8, 13): 4.0, (8, 12): 4.5,
-    (8, 11): 5.0, (8, 10): 5.5, (8, 9): 6.0,
-    (8, 8): 6.5,  (9, 8): 7.5,  (10, 8): 8.5
-}
+# Mechanical Parameters
+N_cells = 26 
+C_w = 4.163
 
-# Calibartion
-motor_A = 8
-moved_B = 11
-dia_wheel = 0.64
-wheel_slip = 0.085
-N_cells = 26
+# Gear Calibration (from Baldan PLAB planter manual for 20cm spacing)
+sprocket_A = 8 # Motor sprocket "A" 
+sprocket_B = 11 # Moved sprocket "B"
+ratio = sprocket_A/sprocket_B # Transmission (r)
 
-# Operation
-speed_kph = 4.0
-speed_mps = speed_kph/3.6
+# Event probabilities
+p0 = 0.04
+p1 = 0.09
+p2 = 0.02
+assert abs(p0+p1+p2-1) < 1e-9
