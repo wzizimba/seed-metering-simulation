@@ -20,6 +20,6 @@ ratio = sprocket_A/sprocket_B # Transmission (r)
 
 # Event probabilities
 p0 = 0.04
-p1 = 0.09
+p1 = 0.94
 p2 = 0.02
 assert abs(p0+p1+p2-1) < 1e-9
