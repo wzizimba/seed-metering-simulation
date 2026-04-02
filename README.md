@@ -42,7 +42,7 @@ Actual spacing under slip is:
 
 $$S_a = \frac{s_t}{1 - \lambda}$$
 
-### 3. Stochastic Monte Carlo Model
+### 3. Stochastic Model
 To capture real-world disturbances, the model runs 10,000 trials and variablity through probabilistic pickup events is added. Each cell pass is modeled as a random draw from three outcomes:
 
 **Event Probabilities:** 
