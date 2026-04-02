@@ -10,7 +10,7 @@ The project resolves the discrepancy between theoretical spacing of $20.0$ cm an
 
 A ground slip of **$\lambda$ = 8.5%** is identified as a significant physical cause.
 
-This project is a computational extension of my Bachelor thesis work
+This project is a computational extension of the Bachelor thesis [1] 
 
 ---
 
@@ -72,3 +72,7 @@ $P(X=2) = 0.02$
 ## Experimental Validation
 The simulation was calibrated using experimental data collected at a constant foward speed of **4.0 km/h**. Results are recorded in 'data/experimental_data.csv'
 
+---
+
+## Reference
+[1] Zimba, W. Construction of a Metering System for Maize Seed using Additive Manufacturing Technology, (2024). Department of Agricultural Engineering, University of Zambia. (Unpublished)
