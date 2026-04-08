@@ -3,7 +3,7 @@
 ## Project Overview
 This repository contains a Python simulation of a **26-cell seed metering plate** design for a metering mechanism calibrated with gear configurations (ratios) from the Baldan PLB row planter manual. 
 
-The project resolves the discrepancy between theoretical spacing of $20.0$ cm and the mean experimental field results of $21.7$ cm [1] by incoporating:
+The project resolves the discrepancy between theoretical spacing of $20.0$ cm and the mean experimental field results of $20.35$ cm [1] by incoporating:
 1. **Mechanical Tansmission:** Sprocket-to-plate ratios.
 2. **Ground Wheel Slip ($\lambda$):** Modeling the interaction between soil and ground wheel.
 3. **Stochastic Monte Carlo Model:** Accounts for the probablistc misses and double pickup events.
