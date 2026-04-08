@@ -20,9 +20,9 @@ def contour():
         spacings = [s_a(r, lam) * 100 for r in ratios]
         ax.plot(ratios, spacings, label=f"Lambda = {lam:.1%}")
 
-    ax.axhline(exp_spcng, color='green', linestyle="--", linewidth=1.2, label=f"Target: {exp_spcng} cm")
-    ax.axhline(expr_mean, color="red", linestyle=":", linewidth=1.2, label=f"Experimental mean: {expr_mean} cm")
-    ax.axvline(ratio, color="gray", linestyle="-.", linewidth=1, label=f"Gear Ratio: A{sprocket_A}/B{sprocket_B} = {ratio:.3f}")
+    ax.axhline(exp_spcng, color='gray', linestyle="--", linewidth=1.2, label=f"Target: {exp_spcng} cm")
+    ax.axhline(expr_mean, color="gray", linestyle=":", linewidth=1.2, label=f"Experimental mean: {expr_mean} cm")
+    ax.axvline(ratio, color="gray", linestyle="-.", linewidth=1, label=f"Gear Ratio: {sprocket_A}/{sprocket_B} = {ratio:.3f}")
 
     ax.set_xlabel("Transmission Ratio r = A/B")
     ax.set_ylabel("Actual Spacing Sa [cm]")
