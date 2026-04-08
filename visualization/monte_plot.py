@@ -23,9 +23,9 @@ def carloPlot():
     x = np.linspace(spacings.min(), spacings.max(), 300)
     ax.plot(x, norm.pdf(x, mean, std), color="black", linewidth=1.5)
 
-    ax.axvline(mean, color="blue", linewidth=1.2, linestyle="-", label=f"Sim. mean: {mean:.2f} cm")
-    ax.axvline(expr_mean, color="red", linewidth=1.2, linestyle="--", label=f"Exp. mean: {expr_mean} cm")
-    ax.axvline(exp_spcng, color="green", linewidth=1.2, linestyle=":", label=f"Target: {exp_spcng} cm")
+    ax.axvline(mean, color="gray", linewidth=1.2, linestyle="-", label=f"Sim. mean: {mean:.2f} cm")
+    ax.axvline(expr_mean, color="gray", linewidth=1.2, linestyle="--", label=f"Exp. mean: {expr_mean} cm")
+    ax.axvline(exp_spcng, color="gray", linewidth=1.2, linestyle=":", label=f"Target: {exp_spcng} cm")
 
     ax.set_xlabel("Intra-row Spacing [cm]")
     ax.set_ylabel("Probability Density")
