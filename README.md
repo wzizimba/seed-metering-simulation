@@ -76,3 +76,7 @@ The simulation was calibrated using experimental data collected at a constant fo
 
 ## Reference
 [1] Zimba, W. Construction of a Metering System for Maize Seed using Additive Manufacturing Technology, (2024). Department of Agricultural Engineering, University of Zambia. (Unpublished)
+
+---
+## Legal Notice
+This project is a computational extension of a Bachelor's thesis conducted at the University of Zambia (2024). The simulation code is the original work of the author. The experimental data referenced belongs to the associated thesis.
