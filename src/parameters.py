@@ -6,7 +6,7 @@
 N = 10000 # Simulation trials
 Lambda = 0.085 # Ground slip coeffecient
 exp_spcng = 20.0 # expected spacin in [cm]
-expr_mean = 21.7 # experimental mean in [cm]
+expr_mean = 20.35 # experimental mean in [cm]
 seed_ran = 42 
 
 # Mechanical Parameters
