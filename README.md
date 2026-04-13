@@ -79,4 +79,4 @@ The simulation was calibrated using experimental data collected at a constant fo
 
 ---
 ## Legal Notice
-This project is a computational extension of a Bachelor's thesis conducted at the University of Zambia (2024). The simulation code is the original work of the author. The experimental data referenced belongs to the associated thesis.
+This project is a computational extension of a Bachelor's thesis conducted at the University of Zambia (2024). The simulation computer programs are the work of the author. The experimental data referenced belongs to the associated thesis.
