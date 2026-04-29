@@ -13,12 +13,14 @@ from kinematic import s_a
 def contour():
     ratios = np.linspace(0.4, 1.4, 300)
     slips = [0.0, 0.05, 0.085, 0.12]
+    linestyles=["-","--","-.",":"]
 
     fig, ax = plt.subplots(figsize=(8, 5))
 
-    for lam in slips:
-        spacings = [s_a(r, lam) * 100 for r in ratios]
-        ax.plot(ratios, spacings, label=f"Lambda = {lam:.1%}")
+    for lam, ls in zip(slips,linestyles):
+        spacings = [s_a(r, lam)*100 for r in ratios]
+        ax.plot(ratios, spacings, color="black", linestyle=ls,
+                linewidth=1.5,label=f"Lambda = {lam:.1%}")
 
     ax.axhline(exp_spcng, color='gray', linestyle="--", linewidth=1.2, label=f"Target: {exp_spcng} cm")
     ax.axhline(expr_mean, color="gray", linestyle=":", linewidth=1.2, label=f"Experimental mean: {expr_mean} cm")
