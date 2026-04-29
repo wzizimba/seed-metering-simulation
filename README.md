@@ -13,6 +13,7 @@ A ground slip of **$\lambda$ = 8.5%** is identified as a significant physical ca
 This project is a computational extension of the Bachelor thesis [1] 
 
 ---
+## Methodology
 
 ### 1. Mechanical Transmission
 The simulation treats the metering mechanism as a mechanically linked system. From the ground wheel through a chain-and-sprocket transmission. Plate rotation is derived from ground wheel travel confined to a specified gear ratio.
@@ -23,7 +24,7 @@ The number of seeds delivered in a meter is:
 
 $$s_m = \frac{N \cdot r}{C_w}$$
 
-Where $$r$$ is the transmission ratio
+Where $r$ is the transmission ratio
 
 Theoretical intra-row spacing is therefore:
 
@@ -33,7 +34,7 @@ $$s_t = \frac{C_w}{N \cdot r}$$
 
 $$S_{a} = \frac{1}{S_m \cdot (1 - \lambda)}$$
 
- Where $$\lambda$$ represents the ground-wheel slip coefficient.
+ Where $\lambda$ represents the ground-wheel slip coefficient.
 
 ### 2. Ground Wheel Slip
 This occurs when the wheel rotates through an angle that reduces actual ground contaact and delivers less forward motion.
@@ -59,18 +60,31 @@ The total number of seeds for a give cell pass can be represented as:
 
 $$S_{total} = \sum_{i=1}^{N} X_i$$
 
-Where $$X$$ is a discrete random variable with the probability mass function:
+Where $X$ is a discrete random variable with the probability mass function:
 
-$P(X=0) = 0.04$
+$$P(X=0) = 0.04$$
 
-$P(X=1) = 0.94$
+$$P(X=1) = 0.94$$
 
-$P(X=2) = 0.02$
+$$P(X=2) = 0.02$$
+
+#### Simulation loop:
+```python
+    rng = np.random.default_rng(seed_ran)
+    sa_cm = s_a(ratio, lam)*100
+    outcomes = rng.choice([0, 1, 2], size = (n_trials, N_cells), 
+                          p=[p0, p1, p2])
+    spacings = []
+    for trial in outcomes:
+        for seeds in trial:
+            if seeds == 0:
+                continue
+            spacings.append(sa_cm/seeds)
+```
 
 ---
 
-## Experimental Validation
-The simulation was calibrated using experimental data collected at a constant foward speed of **4.0 km/h**. Results are recorded in 'data/experimental_data.csv'
+## Figures 
 
 ---
 
